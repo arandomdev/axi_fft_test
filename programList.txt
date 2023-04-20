@@ -1,0 +1,3 @@
+build/axi_fft_test
+build/speedTest
+scripts/pySpeedTest.py
