@@ -93,7 +93,7 @@ int main() {
   std::cout << fmt::format("Took: {}ms\n", timeDelta.count());
 
   // Cleanup
-  munmap((void *)dev, CORE_MEM_SIZE);
+  munmap(devMem, CORE_MEM_SIZE);
   close(fd);
   return 0;
 }
