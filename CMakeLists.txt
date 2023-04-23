@@ -29,3 +29,4 @@ add_executable(speedTest src/speedTest.cpp src/TestVectors/TestVectors.cpp)
 target_link_libraries(speedTest PRIVATE fmt::fmt)
 
 add_executable(axi_loopback_test src/axi_loopback_test.cpp)
+target_link_libraries(axi_loopback_test PRIVATE fmt::fmt)

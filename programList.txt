@@ -1,3 +1,4 @@
 build/axi_fft_test
+build/axi_loopback_test
 build/speedTest
 scripts/pySpeedTest.py

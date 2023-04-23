@@ -1,4 +1,5 @@
 #include <fcntl.h>
+#include <fmt/core.h>
 #include <iostream>
 #include <sys/mman.h>
 #include <unistd.h>
@@ -32,9 +33,9 @@ int main() {
   std::cout << "Peripheral ID: " << *(dev + REG_ID) << "\n";
   std::cout << "--------------------\n\n";
 
-  std::cout << "Scratch Before: " << *(dev + REG_SCRATCH) << "\n";
+  std::cout << fmt::format("Scratch Before: {:x}\n", *(dev + REG_SCRATCH));
   *(dev + REG_SCRATCH) = 0xDEADBEEF;
-  std::cout << "Scratch After: " << *(dev + REG_SCRATCH) << "\n";
+  std::cout << fmt::format("Scratch After: {:x}\n", *(dev + REG_SCRATCH));
 
   // Cleanup
   munmap(devMem, CORE_MEM_SIZE);
