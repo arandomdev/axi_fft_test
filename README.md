@@ -10,4 +10,8 @@ The toolchain should be extracted to a directory called "toolchain", for example
         └── ...
 ```
 
+# Report
+Report detailing workflow for creating AXI FFT and AXI Loopback Test are available [here][2].
+
 [1]: https://developer.arm.com/-/media/Files/downloads/gnu-a/8.3-2019.03/binrel/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf.tar.xz
+[2]: https://github.com/arandomdev/axi_fft_test/blob/9c2fdc32de1b3cd7b569d800763fa02231b1859c/Report.pdf
